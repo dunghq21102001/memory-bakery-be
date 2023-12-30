@@ -15,8 +15,8 @@ app.get("/",(req,res)=>{
 res.send("This Web server is processed for MongoDB")
 })
 const { MongoClient, ObjectId } = require('mongodb');
-// client = new MongoClient("mongodb+srv://dunghqse151397:zMwLJvTl9tN5ctxR@cluster0.tmc9p53.mongodb.net/?retryWrites=true&w=majority");
-client = new MongoClient("mongodb://localhost:27017");
+client = new MongoClient("mongodb+srv://dunghqse151397:zMwLJvTl9tN5ctxR@cluster0.tmc9p53.mongodb.net/?retryWrites=true&w=majority");
+// client = new MongoClient("mongodb://localhost:27017");
 client.connect();
 database = client.db("Memory_Bakery"); 
 const productCollection = database.collection("Product");
